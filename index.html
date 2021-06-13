@@ -1,0 +1,276 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+{% block head %}
+
+    {% block title %}
+        <title>首页</title>
+    {% endblock %}
+    {{ super()}}
+{% endblock %}
+<body>
+    <div class="wrapper">
+        {% for message in get_flashed_messages() %}
+                <strong>{{ message }}</strong>
+        {% endfor %}
+
+        {% block header %}
+            {{ super() }}
+        {% endblock %}
+
+        <div class="cs-banner">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <figure>
+                                <img src="../static/assets/extra-images/banner.jpg" alt="#">
+                                <figcaption>
+                                    <div class="text">
+                                        <h2>
+                                            随时随地探索项目！
+                                        </h2>
+                                        <div class="spreator5"></div><span>就像您一样，使用Razoo的人们创建了90,000多个筹款网站，并为他们关心的事业捐款超过2.5亿美元<br>
+                                        </span><a href="#" class="explore-btn cs-bgcolor">探索活动</a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="../static/assets/extra-images/banner.jpg" alt="#">
+                                <figcaption>
+                                    <div class="text">
+                                        <h2>
+                                            随时随地探索项目！
+                                        </h2>
+                                        <div class="spreator5"></div><span>就像您一样，使用Razoo的人们创建了90,000多个筹款网站，并为他们关心的事业捐款超过2.5亿美元<br>
+                                        </span><a href="#" class="explore-btn cs-bgcolor">探索活动</a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
+            </div><!-- Main Content -->
+            <main id="main-content">
+                <div class="main-section">
+                    <div class="page-section">
+                        <div class="container">
+                            <div class="row">
+                                <div class="section-fullwidth col-lg-12">
+                                    <div class="cs-content-holder">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                                <article class="cs-services modren top-center">
+                                                    <figure>
+                                                        <img src="../static/assets/extra-images/ico-services1.png" alt="">
+                                                    </figure>
+                                                    <div class="text">
+                                                        <h2>
+                                                            第一步、创建您的页面
+                                                        </h2>
+                                                        <!-- <p>
+                                                            So sarcastically strung dazedly crab dear good-ness exuberant lightly fish so hey underneath to excluding apt burst walked gosh pugnaciously hello onto ouch lantern.
+                                                        </p><a href="#" class="read-more">Read More</a> -->
+                                                    </div>
+                                                </article>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                                <article class="cs-services modren top-center">
+                                                    <figure>
+                                                        <img src="../static/assets/extra-images/ico-services2.png" alt="">
+                                                    </figure>
+                                                    <div class="text">
+                                                        <h2>
+                                                            第二步、分享你的故事
+                                                        </h2>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                                <article class="cs-services modren top-center">
+                                                    <figure>
+                                                        <img src="../static/assets/extra-images/ico-services3.png" alt="">
+                                                    </figure>
+                                                    <div class="text">
+                                                        <h2>
+                                                            第三步、筹集资金
+                                                        </h2>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% block error_404 %}
+                {% endblock %}
+                    <div class="page-section">
+                        <div class="container">
+                            <div class="row">
+                                <div class="section-fullwidth col-lg-12">
+                                    <div class="cs-content-holder">
+                                        <div class="row">
+                                            <aside class="page-sidebar col-lg-3">
+                                                <div class="widget cs_directory_categories">
+                                                    <div class="widget-section-title">
+                                                        <h4>
+                                                            <i class="icon-globe4"></i>15 种多样的类别
+                                                        </h4>
+                                                    </div>
+                                                    <ul class="menu">
+                                                        <li>
+                                                            <a href="#"><i class="icon-user9 cscolor"></i>Art</a><span>233</span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"><i class="icon-heart11 cscolor"></i>Comics</a><span>258</span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"><i class="icon-brush2 cscolor"></i>Craft</a><span>89</span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"><i class="icon-circle-thin cscolor"></i>Dance</a><span>1879</span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"><i class="icon-key7 cscolor"></i>Design</a><span>55</span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"><i class="icon-sun4 cscolor"></i>Fashion</a><span>12</span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"><i class="icon-light-bulb cscolor"></i>Film & Video</a><span>8</span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"><i class="icon-clipboard6 cscolor"></i>Food</a><span>10</span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"><i class="icon-archive2 cscolor"></i>Games</a><span>56</span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"><i class="icon-pie2 cscolor"></i>Journalism</a><span>233</span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"><i class="icon-lock6 cscolor"></i>Music</a><span>258</span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"><i class="icon-upload10 cscolor"></i>Photography</a><span>1879</span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"><i class="icon-archive3 cscolor"></i>Publishing</a><span>55</span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"><i class="icon-sound4 cscolor"></i>Technology</a><span>89</span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"><i class="icon-evernote cscolor"></i>Theatre</a><span>13</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="widget widget_advertisment">
+{#                                                    <img src="../static/assets/extra-images/adv2.jpg" alt="">#}
+                                                    <img src="../static/assets/extra-images/adv2.jpg" alt="">
+                                                </div>
+                                            </aside>
+                                            <div class="page-content col-lg-9">
+                                                <div class="listing_grid">
+                                                    {% block row %}
+                                                            <div class="row">
+                                                                {% for function in functions %}
+                                                                    <article class="col-lg-4 col-md-4 col-sm-6">
+{#                                                                    <article class="col-lg-4 col-md-4 col-sm-6" style="display:none">#}
+                                                                        <div class="directory-section">
+                                                                            <div class="cs_thumbsection">
+                                                                                <figure>
+                                                                                    <a href="/functions_published/{{ function.function_id }}"><img src="https://ike-li.github.io/Drawing_Bed/pictures/{{ function.function_cover }}" alt=""></a>
+                                                                                </figure>
+                                                                            </div>
+                                                                            <div class="content_info">
+                                                                                <div class="title">
+                                                                                    <h3>
+                                                                                        <a href="/function_published/{{ function.function_id }}">{{ function.function_title }}</a>
+                                                                                    </h3><span class="addr">{{ function.function_introduction }}</span>
+                                                                                </div>
+                                                                                <div class="dr_info">
+                                                                                    <ul>
+                                                                                        <li>
+                                                                                            <i class="cscolor icon-target5"></i>¥ {{ function.crowd_funding_money }} goal
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <i class="cscolor icon-clock7" ></i>{{ function.closing_time | string |truncate(10, True, '') }} <!-- jinja2 过滤器 -->
+                                                                                        </li>
+                                                                                    </ul><span class="bar"><span style="width:{{ (function.crowd_funding_current_money / function.crowd_funding_money) * 100 }}%;"></span></span>     <!-- 颜色进度条-->
+                                                                                    <div class="detail">
+                                                                                        <span class="fund">{{ (function.crowd_funding_current_money / function.crowd_funding_money) * 100 }} %
+                                                                                            {% if function.crowd_funding_current_money < function.crowd_funding_money %}
+                                                                                                众筹中
+                                                                                            {% else %}
+                                                                                                众筹成功
+                                                                                            {% endif %}
+                                                                                        </span><!-- 金额进度条-->
+                                                                                        <a href="/collect/{{ function.function_id }}" class="star icon-star"></a>
+                                                                                    </div><br>
+                                                                                    <center>
+                                                                                        <div >
+                                                                                            <form action="{{ url_for('user.donating') }}" method="post">
+                                                                                                <fieldset>
+                                                                                                    <input type="submit" value="为他筹集" name="submit" class="cs-btn">
+                                                                                                    <input type="hidden" value="{{ function.function_id }}" name="function_id">
+                                                                                                    <input type="hidden" value="{{ function.publisher }}" name="publisher">
+                                                                                                </fieldset>
+                                                                                            </form>
+                                                                                    </div>
+                                                                                    </center>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </article>
+                                                                {% endfor %}
+                                                            </div>
+                                                    {% endblock %}
+
+                                                    {% block page_size %}
+													<form action="{{ url_for('index') }}" method="post">
+                                                        {% if functions | length == 9 %}
+                                                            <input type="submit" value="加载更多" name="next page" class="center-block"/>
+                                                            <input type="hidden" value="{{ (functions | last).function_id }}" name="function_id">
+                                                        {% else %}
+                                                            <center>没有更多了</center>
+                                                        {% endif %}
+
+													</form>
+                                                    {% endblock %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    {% block register %}
+                        {{ super() }}
+                    {% endblock %}
+
+                </div>
+            </main><!--// Main Content //--><!--// Footer Widget //-->
+
+        {% block footer %}
+            {{ super() }}
+        {% endblock %}
+
+        {% block copyright %}
+            {{ super() }}
+        {% endblock %}
+
+    </div><!-- jQuery (necessary JavaScript) -->
+
+    {% block script %}
+        {{ super() }}
+    {% endblock %}
+
+</body>
+</html>
