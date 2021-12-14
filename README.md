@@ -7,4 +7,4 @@ https://ike-li.github.io/Drawing_Bed/
 
 https://ike-li.github.io/Drawing_Bed/pictures/图片名.后缀
 
-https://ike-li.github.io/Drawing_Bed/ike.link/pictures/图片名.后缀
+https://ike-li.github.io/Drawing_Bed/ike.link/图片名.后缀
