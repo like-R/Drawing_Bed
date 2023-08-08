@@ -1,1 +1,3 @@
 https://redis.readthedocs.io/en/stable/connections.html#cluster-client
+
+user_init_password
