@@ -3,3 +3,5 @@ https://redis.readthedocs.io/en/stable/connections.html#cluster-client
 user_init_password
 
 user_reset_password
+
+0, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8'
